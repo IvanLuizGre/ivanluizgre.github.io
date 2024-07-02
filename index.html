@@ -1,59 +1,84 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ivanilson Silva - Personal</title>
-    <style>
-        #meuNome {
-          background-color: lightblue;
-          color: black;
-          padding: 15px;
-          text-align: center;
-          font-size: 40px;
-        } 
+    <!DOCTYPE html>
+    <html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ivanilson Silva - Personal Site</title>
+        <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="menu">
+            <a href="#hero">Welcome</a>
+            <a href="#formação">Formação</a>
+            <a href="#cidadeOrigem">Cidade</a>
+            <a href="#familia">Família</a>
+            <a href="#meuEsporte">Esporte Favorito</a>
+            <a href="#timeCoracao">Seleção</a>
+            </nav>
+        </header>
+        <div id="top">
+            <a href="#top" id="topo">Voltar ao Topo</a>
+        </div>
 
-        
-        </style>
-</head>
-<body>
-    <h1 id = "meuNome">Ivanilson Silva</h1><hr>
-    <div id = "LinhaTempo">
-        <h2>Linha do tempo</h2>
+        <section class="hero" id="hero">
+            <h1 class = "meuNome">Ivanilson Silva</h1>
+            <img src="imagens/capasite.jpg" alt="foto_de_capa">
+        </section>
 
-        <img src="imagens/linhaTempoNova.jpeg" alt="Texto alternativo" width="600"><br>
-    </div>
-    <div id = "formação">
-        <h2>Formação</h2>
-        <ul>
-            <li>Graduado Bacharel de Administração | Faculdade Dom Bosco de Goioerê</li>
-            <li>Pós-Graduado em Administração Financeira, Contábil e Controladoria | INBRAPE</li>
-            <li>Pós-Graduado em Gerenciamento de Projetos | FGV</li>
-            <li>
-                Saiba mais sobre mim no <a href="https://www.linkedin.com/in/ivanilson-silva-pmp-79242867/" target="_blank">Linkedin</a><br></li>
-        </ul>
-    </div>
-    <div id = "cidadeOrigem">
-        <h2>Conheça Goioerê - <a href="https://www.goioere.pr.gov.br/site/" target="_blank">Minha Cidade Natal</a></h2>
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29117.25526019298!2d-53.02884709999999!3d-24.183762450000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f28b4213e19969%3A0xb929ada02332f991!2sGoioer%C3%AA%2C%20PR%2C%2087360-000!5e0!3m2!1spt-BR!2sbr!4v1712194140579!5m2!1spt-BR!2sbr"
-            width="600" height="450"
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-    </div>
-    <div id = "familia">
-        <h2>Minha Família - Isso me resume:</h2>
-        <img src="imagens/familia.png" alt="FotoFamília" width="600"><br>
-    </div>
-    <div id = "timeCoração">
-        <h2>Meu Esporte Favorito</h2><br>
-        <video width="600" height="450" autoplay controls>
-        <source src="videos/videoFutebol.mp4" ></video>
-        <h2>O Maior do Brasil</h2>
-        <img src="imagens/tricampeao.jpg" alt="SPFC" width="600"><br>
-    </div>
-</body>
-</html>
+        <section id="formação">
+            <h2>Formação</h2>
+            <ul>
+                <li>Graduado <span>Bacharel de Administração</span> | Faculdade Dom Bosco de Goioerê</li>
+                <li>Pós-Graduado em <span>Administração Financeira, Contábil e Controladoria</span> | INBRAPE</li>
+                <li>Pós-Graduado em <span>Gerenciamento de Projetos</span> | FGV</li>
+                <li>Cursando Tecnologia em <span>Sistemas para Internet</span> | UTFPR-TOO</li><br>
+                <li>Saiba mais sobre mim no <a href="https://www.linkedin.com/in/ivanilson-silva-pmp-79242867/" target="_blank">Linkedin</a><br></li>
+            </ul>
+        </section>
+
+        <section id="cidadeOrigem">
+            <h2>Conheça Goioerê - <a href="https://www.goioere.pr.gov.br/site/" target="_blank">Minha Cidade Natal</a></h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29117.25526019298!2d-53.02884709999999!3d-24.183762450000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f28b4213e19969%3A0xb929ada02332f991!2sGoioer%C3%AA%2C%20PR%2C%2087360-000!5e0!3m2!1spt-BR!2sbr!4v1712194140579!5m2!1spt-BR!2sbr"
+                width="600" height="450"
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+
+        <section id = "familia">
+            <h2>Minha Família - "Meu porto seguro"</h2>
+            <figure>
+                <img src="imagens/familia.png" alt="FotoFamília" width="600">
+                <figcaption>Passeio Ópera de Arame - Curitiba-PR</figcaption><br>
+            </figure>
+        </section>
+
+        <section id = "meuEsporte">
+            <h2>Meu Esporte Favorito</h2>
+            <video width="600" controls muted>
+            <source src="videos/videoFutebol.mp4"></video>
+        </section>
+
+        <section id="timeCoracao">
+            <h2>O Maior do Brasil</h2>
+            
+            <img src="imagens/tricampeao.jpg" alt="SPFC" width="600"><br>
+        </section>
+
+        <footer>
+            <h4>Contatos:</h4>
+            <div class="contatos">
+                <img src="imagens/email_3178158.png" alt="email">
+                <p>ivanluizgre@hotmail.com</p>
+            </div>
+            <div class="contatos">
+            <img src="imagens/social_13051741.png" alt="whatsapp"><p>(44) 9 9967-4314</p>
+            </div>
+        </footer>
+    </body>
+    </html>

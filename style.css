@@ -1,0 +1,105 @@
+        body {
+            background-color: lightgrey;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #22374a;
+            position: fixed;
+            justify-content: space-between;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            margin: 0 5px;
+            text-decoration: none;
+            padding: 15px 15px;
+            display: flexbox;
+            transition: background-color 0.3s;
+            justify-content: center;
+            float: inline-start;
+        }
+        nav a:hover {
+            background-color: #5b4545;
+            border-radius: 5px;
+        }
+        #topo {
+            position: fixed;
+            bottom: 50px;
+            right: 20px;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        #topo:target {
+            display: block;
+        }
+        #topo:hover {
+            background-color: #22374a;
+        }
+
+        .hero {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        #hero img{
+            max-width: 350px;
+            border-radius: 250px;
+            display: inline;
+        }
+        
+        .meuNome {
+            display: inline-flex;
+            background-color: lightgray;
+            color: black;
+            padding: 15px;
+            font-size: 40px;
+            justify-content: space-around;
+        }
+
+        img {
+            border-radius: 5px;
+            max-width: 100%;
+            display: inline;
+        }
+        figcaption {
+            text-decoration:;
+        }
+
+        #hero,
+        #formação,
+        #cidadeOrigem,
+        #meuEsporte,
+        #familia,
+        #timeCoracao {
+            padding-top: 70px;
+        }
+        #formação ul {
+            list-style-type: none;
+            text-align: justify;
+        }
+
+        #formação span {
+            height: bold;
+        }
+
+        footer,
+        .contatos {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            
+        }
+        .contatos img {
+            max-width: 20px;
+        }
